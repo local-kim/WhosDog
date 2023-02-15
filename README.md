@@ -16,7 +16,7 @@
 * 딥러닝
 * 웹 크롤링
 
-### Skills
+### Tools
 * 딥러닝 : Python, TensorFlow
 * 크롤링 : Selenium
 * 클라이언트 : React, Redux, HTML, CSS, Javascript
