@@ -1,0 +1,518 @@
+@import "~bootstrap/scss/bootstrap";
+
+$yellow-color:#FFC711;
+$yellow-color-10:#FFD52D;
+$yellow-color-20:#FFE449;
+$yellow-color-30:#FFEE7E;
+$yellow-color-40:#FFFD0E;
+
+$gold-color: #B8860B;
+$gold-color-10:#EDC903;
+
+
+@mixin btn-design {
+    background-color: $yellow-color; /* Green */
+  border: none;
+  color: white;
+  padding: 0 1fr;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height:40px;
+  border-radius:1.5rem;
+};
+
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:100;
+    src: url(./fonts/NotoSansKR-Thin.otf);
+};
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    src: url(./fonts/NotoSansKR-Light.otf);
+};
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    src: url(./fonts/NotoSansKR-Regular.otf);
+};
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:500;
+    src: url(./fonts/NotoSansKR-Medium.otf);
+};
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:700;
+    src: url(./fonts/NotoSansKR-Bold.otf);
+};
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:900;
+    src: url(./fonts/NotoSansKR-Black.otf);
+};
+
+#root{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+div{
+    font-family: 'Noto Sans KR', sans-serif;
+};
+
+h1{
+    font-weight:900;
+}
+
+.navlist{
+    color:white;
+    font-weight: 600;
+    transition:1s;
+}
+.navlist:hover{
+    color:black;
+    font-weight: 800;
+}
+
+input{
+    border:0px solid;
+    border-bottom:2px solid gainsboro;
+}
+.comment-card input{
+    width:100%;
+    border:0px solid;
+    border-bottom:2px solid gainsboro;
+}
+.container-custom{
+    text-align:center;
+    display:block;
+    width:100%;
+    max-width:700px;
+    min-width:300px;
+    border:0px;
+    padding:15px 10px 80px 10px;
+    margin:5px auto;
+}
+.card-custom{
+    display:inline-block;
+    width:100%;
+    margin:0 auto;
+    padding: 15px 20px;
+    border-top:1px solid lightgray;
+    border-left:1px solid lightgray;
+    box-shadow:3px 3px 3px lightgray;
+    border-radius:0.3rem;
+}
+
+.font-white{
+    color:white;
+}
+
+.nav-menu{
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    z-index:10;
+    background-color: $yellow-color-30;
+}
+
+.mainImage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+
+.maxwidth{
+    max-width: 1024;
+}
+.largeFont{
+    font-size:40px;
+    color:white;
+    font-weight: 800;
+}
+
+.submitBtn{
+    height:20px;
+    color:white;
+    border: 0px;
+}
+
+.preview{
+    width:300px;
+    height:300px;
+    background-color: gray;
+    display:block;
+}
+
+.nullBox{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border:1px solid gainsboro;
+    margin: 0 auto 40px auto;
+}
+.searchBtn{
+    @include btn-design;
+    font-weight:600;
+}
+
+.searching{
+    max-width:160px;
+    margin: 50px auto; 
+
+}
+
+.noMatch{
+    padding:50px 0;
+    font-size:30px;
+    font-weight:500;
+    color:gray;
+}
+
+// community 
+.commuNav{
+    background-color: white;
+    vertical-align:middle;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    font-size:0.8rem;
+}
+
+.communityBtn{
+  background-color: $yellow-color; /* Green */
+  border: none;
+  color: white;
+  padding: 0 1fr;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 200px;
+  min-width:50px;
+  height:40px;
+  border-radius:0.5rem;
+  font-size:18px;
+  font-weight:600;
+}
+
+.container {
+    display:block;
+    width:100%;
+    padding-bottom:10px;
+}
+
+.post{
+    display:block;
+    background-color: beige;
+    box-shadow:2px 2px 2px gainsboro;
+    border-radius:1rem;
+    margin: 10px 0;
+    padding:20px;
+    text-align: left;
+    color:black;
+}
+
+.post header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid tan;
+    padding:5px;
+}
+
+.post header .title{
+    display:inline;
+    font-size:20px;
+    color:black;
+    font-weight:500;
+}
+
+.post .content{
+    color:black;
+    padding:10px;
+}
+
+.modal-write{
+    height:500px;
+}
+.postTitle, .postEditor{
+    border: 1px solid gray;
+}       
+.postEditor{
+    width:100%;
+    height:300px;
+}
+
+.linkButton{
+    display:inline-block;
+}
+
+.card-post {
+    text-align: left;
+    background-color: bisque;
+    border-radius: 0.3rem;
+    box-shadow:2px 2px 2px $yellow-color-10;
+    padding:30px;
+}
+.card-post .title{
+    display:inline-block;
+    text-align:left;
+    font-size:20px;
+    font-weight:600;
+}
+
+.card-post .date{
+    padding-top:5px;
+    color:gray;
+    margin-right:0px;
+}
+
+.card-post .nickname{
+    color:black;
+    font-weight:500;
+}
+
+.card-post .content{
+    margin-top:20px;
+}
+
+.card-custom .comment-card{
+    margin-top:20px;
+    border-radius: 0.3rem;
+}
+
+.comment-card .input input{
+    border:0px solid;
+    border-bottom:1px solid gray;
+}
+
+.comment-card .input button{
+    display:inline-block;
+    margin-right:0;
+    padding:0;
+}
+
+.comment-card .input{
+    text-align:right;
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+
+.comment{
+    padding:20px;
+    border-radius:0.3rem;
+    box-shadow:2px 2px 2px gainsboro;
+    margin-bottom:5px;
+
+}
+.comment .nick{
+    float:left;
+}
+
+.comment .date{
+    display:inline-block;
+    text-align: right;
+    margin-right:0;
+}
+
+.comment header{
+    border-bottom:1px solid gainsboro;
+    padding-bottom:3px;
+    text-align:right;
+}
+
+.comment body{
+    text-align:left;
+    padding:3px;
+}
+
+.comment .delete{
+    display:inline-block;
+    font-weight:700;
+}
+
+.comment .delete:hover{
+    cursor:pointer;
+}
+
+
+// map overlay
+.wrap {position: absolute; left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+.wrap * {padding: 0;margin: 0;}
+.wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
+.info .title {padding: 0px 0px 0px 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+.info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.info .close:hover {cursor: pointer;}
+.info .body {position: relative;overflow: hidden;}
+.info .desc {position: relative;margin: 10px 0 0 13px;height: 75px;}
+.desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+.info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+.info .link {color: #5085BB;}   
+
+.review section {
+    box-shadow: 1px 1px 2px #888;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom:10px;
+}
+.review section header {
+    padding:0;
+    height: 30px;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.review section main{
+    padding:10px 0;
+}
+
+.review .reviewWriteBtn{
+  @include btn-design;
+    font-size:16px;
+}
+.review .card{
+    padding:10px;
+    box-shadow: 1px 1px 2px #888;
+    margin-bottom:10px;
+}
+.review .btn{
+    @include btn-design;
+    margin:10px 5px;
+}
+
+.yellowStar {
+    color:#fcc419;
+}
+.grayStar{
+    color:grey;
+}
+
+.review ul {
+    padding:0px;
+}
+
+.review ul li .card .header{
+    padding:3px;
+    border-bottom: 1px solid gainsboro;
+}
+.review ul li .card .header div{
+    display: inline-block;
+    padding:0px;
+    text-align:left
+    
+}
+.review ul li .card .header .date{
+    text-align: right;
+}
+
+.review ul li .card .reviewcontent{
+    text-align:left;
+    font-size:16px;
+    border:0;
+    padding:3px;
+}
+
+.tmpreview header {
+    padding:3px;
+    font-size:16px;
+    color:#888; 
+    border-bottom:1px solid bisque;
+}
+
+//button
+.loginBtn{
+background-color: $yellow-color; /* Green */
+  border: none;
+  color: white;
+  padding: 0 1fr;
+  text-align: center;
+  text-decoration: none;
+  height:40px;
+  border-radius:1.5rem;
+  font-size:18px;
+  font-weight:600;
+}
+
+.back{
+    background-color: $yellow-color; /* Green */
+    border: none;
+    color: white;
+    padding: 0 1fr;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    border-radius:0.5rem;
+    font-size:20px;
+    margin-bottom:5px;
+    margin-right:auto;
+    font-weight: 600;
+}
+
+.inputgroup input{
+    width:100%;
+}
+.inputgroup{
+    margin:5px;
+    vertical-align: middle;
+}
+
+.join{
+    text-align: left;
+}
+
+form h3{
+    color:gray;
+}
+
+//pagination
+.pageBtn{
+    display:inline-block;
+    width:23px;
+    height:23px;
+    background-color:$yellow-color-30;
+    color:white;
+    font-weight:600;
+}
+
+.pageClicked{
+    display:inline-block;
+    width:23px;
+    height:23px;
+    background-color:$gold-color;
+    border:1px solid white;
+    color:white;
+    font-weight:600;
+    
+}
+
+.img-frame{
+    width:100%;
+    height:170px;
+    overflow:hidden;
+    position:relative;
+}
+
+.result-image{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
