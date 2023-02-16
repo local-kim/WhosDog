@@ -1,6 +1,6 @@
 # WhosDog
 
-#### 홍익대학교 컴퓨터공학과 졸업 팀 프로젝트
+#### 2021 홍익대학교 컴퓨터공학과 졸업 팀 프로젝트
 
 <p align="center"><img width="500" alt="logo" src="/client/public/Images/whosdog_title.png"></p>
 
