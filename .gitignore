@@ -1,9 +1,9 @@
 node_modules/
 .env
-crawler.py
+# crawler.py
 /config/config.json
 variables/
 client/public/Images/Crawling/*.jpg
 client/public/Images/Search/*.jpg
 client/src/Config.js
-saved_model/
+saved_model/*/*
